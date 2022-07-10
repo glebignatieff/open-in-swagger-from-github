@@ -1,0 +1,27 @@
+{
+  "name": "Open in Swagger Github extension",
+  "description": "Adds 'Open in Swagger' button to OpenAPI yaml files, opens them in Swagger Editor on click",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*.yaml"
+      ],
+      "js": [
+        "github.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://editor.swagger.io/"
+      ],
+      "js": [
+        "swagger.js"
+      ]
+    }
+  ]
+}
