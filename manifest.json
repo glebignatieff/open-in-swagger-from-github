@@ -12,7 +12,7 @@
         "https://github.com/*.yaml"
       ],
       "js": [
-        "github.js"
+        "scripts/github.js"
       ]
     },
     {
@@ -20,7 +20,7 @@
         "https://editor.swagger.io/"
       ],
       "js": [
-        "swagger.js"
+        "scripts/swagger.js"
       ]
     }
   ]
