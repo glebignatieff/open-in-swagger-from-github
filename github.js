@@ -14,7 +14,7 @@ async function fetchFileContent(url) {
 }
 
 function main() {
-    let rawUrlBtn = document.getElementById("raw-url")
+    let rawUrlBtn = document.querySelector('[data-testid="raw-button"]')
     let fileUrl = rawUrlBtn.attributes.href.textContent
 
     fetchFileContent(fileUrl)
